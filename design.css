@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(12, 89, 89, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: #cc2573;
+    text-align: center;
+}
+
+.navbar > a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.navbar > a:hover{
+    color : red;
+}
+
+#mainimage{
+    width: 800px;
+    border: 1px solid blue;
+}
+
