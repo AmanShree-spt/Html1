@@ -1,14 +1,32 @@
 body{
     background-color: rgb(12, 89, 89, 0.8);
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 h1{
-    color: #cc2573;
-    text-align: center;
+    color: white;
+    width: 50%;
 }
 
-.navbar > a{
-    color: greenyellow;
+.navlinks{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.856) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navlinks > a{
+    color: white;
     text-decoration: none;
 }
 
@@ -17,7 +35,38 @@ h1{
 }
 
 #mainimage{
-    width: 800px;
-    border: 1px solid blue;
+    width: 100%;
 }
 
+.offering{
+    text-align: center;
+}
+
+.tile-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile{
+    width: 300px;
+    padding: 1em;
+ 
+}
+
+.tile > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+form{
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+
+input{
+    margin: 0.5em;
+}
