@@ -1,5 +1,5 @@
 body{
-    background-color: #2b3317;
+    background-color: #8de0e0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -19,7 +19,7 @@ h1{
 
 .navbar{
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.8) ;
+    background-color: rgba(0, 0, 0, 0.9) ;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,6 +40,14 @@ h1{
     width: 100%;
 }
 
+.fav{
+    height: 10%;
+}
+
+.fav > img{
+    object-fit: contain;
+}
+
 .offering{
     text-align: center;
 }
@@ -52,14 +60,17 @@ h1{
 }
 
 .tile{
-    width: 300px;
+    width:100%;
     padding: 1em;
+    box-sizing: border-box;
+    border: 2px solid orange;
  
 }
 
 .tile > img{
-    width: 300px;
+    width: 100%;
     height: 300px;
+    border: 2px solid green;
     object-fit: cover;
 }
 
@@ -73,4 +84,29 @@ form{
 
 input{
     margin: 0.5em;
+}
+
+.copy{
+    text-align: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .tile{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1200px) {
+    .tile{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .tile{
+        width: 25%;
+    }
 }
